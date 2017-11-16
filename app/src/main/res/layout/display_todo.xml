@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="11dp"
+            android:background="@null"
+            app:srcCompat="@drawable/showtodo" />
+
+        <TextView
+            android:id="@+id/TextTitle"
+            android:layout_width="240dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/imageView2"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/imageView2"
+            android:text="Title"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/TextDate"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:drawableLeft="@android:drawable/ic_menu_my_calendar"
+            android:drawablePadding="@dimen/activity_horizontal_margin"
+            android:text="DueDate"
+            android:textSize="18sp"
+            android:layout_below="@+id/TextTitle"
+            android:layout_alignStart="@+id/TextTitle" />
+
+        <TextView
+            android:id="@+id/TextTime"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:drawableLeft="@android:drawable/ic_lock_idle_alarm"
+            android:drawablePadding="@dimen/activity_horizontal_margin"
+            android:text="DueTime"
+            android:textSize="18sp"
+            android:layout_below="@+id/TextDate"
+            android:layout_alignStart="@+id/TextDate" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

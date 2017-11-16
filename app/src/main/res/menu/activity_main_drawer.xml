@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_alltasks"
+            android:icon="@drawable/all_tasks"
+            android:title="All Tasks" />
+        <item
+            android:id="@+id/nav_calender"
+            android:icon="@drawable/calender_view"
+            android:title="Calender View" />
+        <item
+            android:id="@+id/nav_completedtasks"
+            android:icon="@drawable/completed"
+            android:title="Completed Tasks" />
+        <item
+            android:id="@+id/nav_remainingtasks"
+            android:icon="@drawable/remaining"
+            android:title="Remaining Tasks" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/logout"
+            android:title="Logout " />
+    </group>
+
+</menu>
